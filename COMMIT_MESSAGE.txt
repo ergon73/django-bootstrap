@@ -1,0 +1,27 @@
+feat: initial Django Bootstrap portfolio site implementation
+
+Создан полнофункциональный Django 5 проект с Bootstrap 5 интеграцией.
+
+Основные компоненты:
+- Django 5.2+ проект с приложением main
+- Базовая структура шаблонов с наследованием (base.html)
+- Отдельные файлы для навигации и футера через {% include %}
+- 4 страницы: Главная, О проекте, Проекты, Контакты
+- Адаптивный дизайн с Bootstrap 5 компонентами
+- Статические файлы (CSS) для кастомных стилей
+- URL маршрутизация с именованными паттернами
+- Все тексты на русском языке
+
+Структура проекта:
+- config/ - конфигурация Django проекта
+- main/ - основное приложение с views, urls, templates, static
+- templates/main/includes/ - переиспользуемые компоненты (nav, footer)
+- static/main/css/ - кастомные стили
+
+Технологии:
+- Django 5.2.10
+- Bootstrap 5.3 (CDN)
+- Python 3.10+
+
+Автор: Георгий Белянин (Georgy Belyanin)
+Email: georgy.belyanin@gmail.com

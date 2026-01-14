@@ -1,0 +1,95 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+<title>Проекты - {{ site_name }}</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">Наши проекты</h1>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Платформа электронной коммерции</h5>
+                <p class="card-text">Полнофункциональный интернет-магазин, созданный с использованием Django и Bootstrap.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-secondary">Bootstrap</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Завершено: 2024</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Блог-приложение</h5>
+                <p class="card-text">Современная платформа для ведения блога с богатым текстовым редактором и комментариями.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-info">PostgreSQL</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Завершено: 2024</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Менеджер задач</h5>
+                <p class="card-text">Система совместного управления задачами с обновлениями в реальном времени.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-success">REST API</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">В процессе</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Погодная панель</h5>
+                <p class="card-text">Визуализация данных о погоде в реальном времени с графиками и картами.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-warning">Интеграция API</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Завершено: 2024</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Система обучения</h5>
+                <p class="card-text">Онлайн-платформа для обучения с курсами и отслеживанием прогресса.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-info">Видео стриминг</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">В процессе</small>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Сайт-портфолио</h5>
+                <p class="card-text">Этот сайт - демонстрация Django шаблонов и Bootstrap.</p>
+                <span class="badge bg-primary">Django</span>
+                <span class="badge bg-secondary">Bootstrap 5</span>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Завершено: 2024</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

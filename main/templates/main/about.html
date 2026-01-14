@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+<title>О проекте - {{ site_name }}</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">О проекте</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>Что мы делаем</h3>
+        <p>Этот Django проект демонстрирует наследование шаблонов, использование includes для переиспользуемых компонентов и стилизацию с помощью Bootstrap. Он демонстрирует лучшие практики для создания масштабируемых веб-приложений.</p>
+        <p>Мы фокусируемся на чистом коде, поддерживаемости и современных паттернах веб-разработки.</p>
+    </div>
+    <div class="col-md-6">
+        <h3>Наши навыки</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Django Framework</li>
+            <li class="list-group-item">Bootstrap 5</li>
+            <li class="list-group-item">Наследование шаблонов</li>
+            <li class="list-group-item">Адаптивный дизайн</li>
+            <li class="list-group-item">Разработка на Python</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

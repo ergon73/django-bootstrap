@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+<title>Главная - {{ site_name }}</title>
+{% endblock %}
+
+{% block content %}
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Добро пожаловать на {{ site_name }}</h1>
+        <p class="col-md-8 fs-4">Это Django проект, демонстрирующий наследование шаблонов, использование includes и стилизацию с помощью Bootstrap.</p>
+        <a href="{% url 'projects' %}" class="btn btn-primary btn-lg">Посмотреть проекты</a>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">О проекте</h5>
+                <p class="card-text">Узнайте больше об этом проекте.</p>
+                <a href="{% url 'about' %}" class="btn btn-sm btn-outline-primary">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Проекты</h5>
+                <p class="card-text">Просмотрите наши проекты.</p>
+                <a href="{% url 'projects' %}" class="btn btn-sm btn-outline-primary">Посмотреть все</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Контакты</h5>
+                <p class="card-text">Свяжитесь с нами.</p>
+                <a href="{% url 'contact' %}" class="btn btn-sm btn-outline-primary">Связаться</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
